@@ -1,4 +1,4 @@
-![Build](https://github.com/AmilaIndika789/Caeser_Cipher/actions/workflows/build_and_test.yml/badge.svg?branch=main&event=push) [![codecov](https://codecov.io/gh/AmilaIndika789/Caeser_Cipher/graph/badge.svg?token=U2X98VLBZT)](https://codecov.io/gh/AmilaIndika789/Caeser_Cipher) 
+![Build](https://github.com/AmilaIndika789/Caeser_Cipher/actions/workflows/build_and_test.yml/badge.svg?branch=main&event=push) [![codecov](https://codecov.io/gh/AmilaIndika789/Caeser_Cipher/graph/badge.svg?token=U2X98VLBZT)](https://codecov.io/gh/AmilaIndika789/Caeser_Cipher) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/7f87f4c583c34e21b125028371cfb22e)](https://app.codacy.com/gh/AmilaIndika789/Caeser_Cipher/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
 # Caeser Cipher 
 
