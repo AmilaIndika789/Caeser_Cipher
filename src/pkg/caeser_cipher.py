@@ -18,7 +18,7 @@ def find_decrypt_letter_index(letter_index, shift_amount):
 
 def caeser(operation, input_text, alphabet, shift_amount):
     output_text = ""
-    for character in input_text:
+    for character in input_text.lower():
         if character in alphabet:
             index = alphabet.index(character)
 
@@ -46,7 +46,7 @@ def main():
     is_rerunning = True
     while is_rerunning:
         direction = get_user_input(encrypt_decrypt_prompt)
-        text = get_user_input("Type your message:\n").lower()
+        text = get_user_input("Type your message:\n")
         shift = int(get_user_input("Type the shift number:\n"))
 
         shift = shift % 26
