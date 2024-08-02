@@ -1,6 +1,8 @@
 import sys
 import string
 import pytest
+import mock
+import builtins
 
 sys.path.append("../src")
 
@@ -60,3 +62,29 @@ def test_caeser_decoding(get_alphabet, get_plain_text, get_cipher_text):
     actual_plain_text = caeser(operation, cipher_text, alphabet, shift_amount)
     expected_plain_text = get_plain_text.lower()
     assert actual_plain_text == expected_plain_text
+
+
+def test_main_encode(capsys, get_plain_text, get_cipher_text):
+    inputs = ["encode", get_plain_text, "56", "no"]
+    with mock.patch.object(builtins, "input", lambda _: inputs.pop(0)):
+        main()
+        captured = capsys.readouterr()
+        assert captured.out == f"{get_cipher_text}\nGood Bye!\n"
+
+
+def test_main_encode_and_decode(capsys, get_plain_text, get_cipher_text):
+    inputs = [
+        "encode",
+        get_plain_text,
+        "56",
+        "yes",
+        "decode",
+        get_cipher_text,
+        "56",
+        "no",
+    ]
+    with mock.patch.object(builtins, "input", lambda _: inputs.pop(0)):
+        main()
+        captured = capsys.readouterr()
+        expected = f"{get_cipher_text}\n{get_plain_text.lower()}\nGood Bye!\n"
+        assert captured.out == expected
