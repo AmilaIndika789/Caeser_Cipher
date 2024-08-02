@@ -1,3 +1,5 @@
+![Build](https://github.com/AmilaIndika789/Caeser_Cipher/actions/workflows/build_and_test.yml/badge.svg?branch=main&event=push) [![codecov](https://codecov.io/gh/AmilaIndika789/Caeser_Cipher/graph/badge.svg?token=U2X98VLBZT)](https://codecov.io/gh/AmilaIndika789/Caeser_Cipher) 
+
 # Caeser Cipher 
 
 A simple command line [Caeser Cipher](https://en.wikipedia.org/wiki/Caesar_cipher) implemented using Python.
