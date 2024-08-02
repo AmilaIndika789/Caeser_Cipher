@@ -12,7 +12,7 @@ def find_encrypt_letter_index(letter_index, shift_amount):
 
 
 def find_decrypt_letter_index(letter_index, shift_amount):
-    new_index = letter_index - shift_amount
+    new_index = letter_index - (shift_amount % 26)
     return new_index
 
 
