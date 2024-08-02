@@ -25,8 +25,11 @@ A simple command line [Caeser Cipher](https://en.wikipedia.org/wiki/Caesar_ciphe
     ~~~
 
 ## Example Usage
+
 ### Encoding
+
 ![Example of encoding using caeser cipher](images/encoding.png)
 
 ### Decoding
+
 ![Example of decoding using caeser cipher](images/decoding.png)
